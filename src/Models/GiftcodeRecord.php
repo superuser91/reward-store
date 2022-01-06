@@ -2,7 +2,7 @@
 
 namespace Vgplay\RewardStore\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Vgplay\RewardStore\Traits\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class GiftcodeRecord extends Model

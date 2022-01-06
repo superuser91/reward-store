@@ -21,8 +21,6 @@ class CreateGiftcodeRecordsTable extends Migration
             $table->timestamp('claim_at')->nullable();
             $table->boolean('is_shared')->default(false);
             $table->timestamps();
-
-            $table->foreign('giftcode_id')->references('id')->on('giftcodes');
         });
     }
 
@@ -33,6 +31,6 @@ class CreateGiftcodeRecordsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('giftcodes');
+        Schema::dropIfExists('giftcode_records');
     }
 }

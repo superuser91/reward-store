@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 interface Packable
 {
-    public function packs(): MorphToMany;
+    public function items(): MorphToMany;
 }

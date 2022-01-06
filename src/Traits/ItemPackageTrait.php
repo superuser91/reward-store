@@ -7,7 +7,7 @@ use Vgplay\RewardStore\Models\IngameItem;
 
 trait ItemPackageTrait
 {
-    public function packs(): MorphToMany
+    public function items(): MorphToMany
     {
         return $this->morphToMany(IngameItem::class, 'packable', 'packables');
     }

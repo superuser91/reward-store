@@ -2,7 +2,6 @@
 
 namespace Vgplay\RewardStore\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Vgplay\LaravelRedisModel\Contracts\Cacheable;
@@ -10,6 +9,7 @@ use Vgplay\LaravelRedisModel\HasCache;
 use Vgplay\RewardStore\Contracts\Giftcode as GiftcodeContract;
 use Vgplay\RewardStore\Contracts\Purchaseable;
 use Vgplay\RewardStore\Traits\GiftcodeTrait;
+use Vgplay\RewardStore\Traits\HasFactory;
 use Vgplay\RewardStore\Traits\ItemPackageTrait;
 use Vgplay\RewardStore\Traits\PurchaseableTrait;
 

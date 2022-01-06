@@ -2,6 +2,7 @@
 
 namespace Vgplay\RewardStore\Traits;
 
+use Vgplay\RewardStore\Contracts\Buyer;
 use Vgplay\RewardStore\Models\GiftcodeRecord;
 
 trait GiftcodeTrait
@@ -15,7 +16,7 @@ trait GiftcodeTrait
             })->first();
     }
 
-    public function deliver()
+    public function deliver(Buyer $buyer, array $data)
     {
         # code...
     }
